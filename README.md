@@ -1,7 +1,7 @@
 # Convertor de valori
 
 ## 1.Rulare
-Proiectul este rulat si compilat cu CLion.
+Proiectul este compilat si rulat cu CLion.
 
 Poate fi compilat si cu gcc: <br>
  gcc main.cpp -o main.cpp <br>
