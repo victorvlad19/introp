@@ -630,8 +630,6 @@ void Grampecentimetrucub(){
     Densitate();
 }
 
-
-// TODO DE COMPLETAT VALORILE CORECTE
 // 11 COMBUSTIBIL
 void Combustibil (){
     int numarCombustibil;
@@ -657,7 +655,7 @@ void Milepergalon (){
     cin >> valoareMilepergalon;
     cout << endl;
     cout << "*RASPUNS--------------------*" << endl << endl;
-    cout << "Litrii per 100km: " << valoareMilepergalon / 1.01325 << endl;
+    cout << "Litrii per 100km: " << valoareMilepergalon / 4.54609188 << endl;
     cout << endl;
     cout << "*---------------------------*" << endl << endl;
     std::this_thread::sleep_for( std::chrono::seconds{1});
@@ -670,7 +668,7 @@ void Litriiper100km () {
     cin >> valoarelitrii100km;
     cout << endl;
     cout << "*RASPUNS--------------------*" << endl << endl;
-    cout << "Mile per Galon: " << valoarelitrii100km / 1.01325 << endl;
+    cout << "Mile per Galon: " << valoarelitrii100km * 4.54609188 << endl;
     cout << endl;
     cout << "*---------------------------*" << endl << endl;
     std::this_thread::sleep_for( std::chrono::seconds{1});
