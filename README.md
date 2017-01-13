@@ -3,7 +3,7 @@
 ## 1.Rulare
 Proiectul este compilat si rulat cu CLion.
 
-Poate fi compilat si cu gcc: <br>
+Poate fi rulat si cu gcc: <br>
  gcc main.cpp -o main.cpp <br>
  ./main.cpp
 
