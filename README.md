@@ -4,8 +4,8 @@
 Proiectul este rulat si compilat cu CLion.
 
 Poate fi compilat si cu gcc:
-gcc main.cpp -o main.cpp
-./main.cpp
+\gcc main.cpp -o main.cpp
+\./main.cpp
 
 ## 2.Descriere
 Un convertor pentru următoarele unități de măsură:
