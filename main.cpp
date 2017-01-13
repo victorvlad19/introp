@@ -1,7 +1,7 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-//MESAJ DE TEST
+
 using namespace std;
 
 int alegere;
@@ -46,6 +46,8 @@ void Atmosfere();
 void Bari ();
 //10
 void Densitate ();
+void Kgpemetrucub();
+void Grampecentimetrucub();
 
 //11
 void Combustibil ();
@@ -580,25 +582,52 @@ void Bari () {
     Presiune();
 }
 
-
-// TODO DE COMPLETAT FUNCTIILE
 // 10 DENSITATE
 void Densitate (){
     int numarPresiune;
     cout << "*---------------------------*" << endl;
     cout << "*-|     Densitate         --*" << endl;
     cout << "*---------------------------*" << endl;
-    cout << "1. Atmosfere: " << endl;
-    cout << "2. Bari: " << endl;
+    cout << "1. Kilogram pe metru cub (kg/m^3) " << endl;
+    cout << "2. Gram pe centimetru cub (oz/in^3) " << endl;
     cout << "3. Inapoi la meniu " << endl;
     cout << "4. Exit" << endl;
     cout << "*---------------------------*" << endl;
     cout << "Alegeti optiunea:" << endl;
     cin >> numarPresiune;
-    if (numarPresiune == 1) Atmosfere();
-    if (numarPresiune == 2) Bari();
+    if (numarPresiune == 1) Kgpemetrucub();
+    if (numarPresiune == 2) Grampecentimetrucub();
     if (numarPresiune == 3) Meniu();
     if (numarPresiune == 4) Exit();
+}
+
+void Kgpemetrucub(){
+    int valoareKGpeMetruCub;
+    cout << "Scrie-ti valoarea in Kilograme pe metru cub:" << endl;
+    cin >> valoareKGpeMetruCub;
+    cout << endl;
+    cout << "*RASPUNS--------------------*" << endl << endl;
+    cout << "Gram pe centimetru cub (kg/m^3): " << valoareKGpeMetruCub * 0.001 << endl;
+    cout << "Ounch per inch cub (oz/in^3): " << valoareKGpeMetruCub * 0.000578 << endl;
+    cout << "Pound per inch cub (lb/in^3): " << valoareKGpeMetruCub *  0.000036 << endl;
+    cout << endl;
+    cout << "*---------------------------*" << endl << endl;
+    std::this_thread::sleep_for( std::chrono::seconds{1});
+    Densitate();
+}
+
+void Grampecentimetrucub(){
+    int valoareGrampecentimetrucub;
+    cout << "Scrie-ti valoarea in Grame pe centimetru cub:" << endl;
+    cin >> valoareGrampecentimetrucub;
+    cout << endl;
+    cout << "*RASPUNS--------------------*" << endl << endl;
+    cout << "Ounch per inch cub (oz/in^3): " << valoareGrampecentimetrucub * 0.578 << endl;
+    cout << "Pound per inch cub (lb/in^3): " << valoareGrampecentimetrucub *  0.036 << endl;
+    cout << endl;
+    cout << "*---------------------------*" << endl << endl;
+    std::this_thread::sleep_for( std::chrono::seconds{1});
+    Densitate();
 }
 
 
