@@ -20,4 +20,4 @@ Un convertor pentru următoarele unități de măsură:
 8. Energie
 9. Presiune (bar to psi)
 10. Densitate
-11. Consum combustibil (din l/100km in mile la galon si km la litru)
+11. Consum combustibil (din l/100km in mile la galon)
